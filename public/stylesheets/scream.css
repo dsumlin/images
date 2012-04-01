@@ -7,7 +7,8 @@ width: 960px;
 
 body {
 
-	background: black;
+	background: #FFFF33;
+	
 }
 
 
@@ -32,8 +33,9 @@ margin-top: 2em;
 font-size: 120%;
 padding: 20px;
 background: black;
-border: 1px groove white;
-color: white;
+border: 1px groove #CCFF33;
+color: #FFFF33;
+
 
 
 
@@ -41,21 +43,21 @@ color: white;
 
 section h1 {
 
-color:#CC9966;
+color:	#FFFF33;
 font-size: 200%;
 
 }
 
 a {
 
-color: #CC9966;
+color: #CCFF33;
 text-decoration: none; 
 
 }
 
 a:hover {
 
-color: #CC9966;
+color: 	yellow;
 
 text-decoration: underline;
 
@@ -64,7 +66,7 @@ text-decoration: underline;
 
 a:visited {
 
-color: #F1E6D3;
+color: #FFFF33;
 
 }
 
@@ -180,7 +182,7 @@ table.profile {
 
 width: 100%;
 padding: 1em;
-border: 1px groove #CC9966;
+border: 1px groove #CCFF33;
 background: white;
 
 
@@ -191,8 +193,8 @@ td.main {
 
 width: 70%;
 padding: 1em;
-color:white;
-border: 1px groove white;
+color:#FFFF33;
+border: 1px groove #CCFF33;
 background: black;
 
 
@@ -403,7 +405,7 @@ font-size: 80%;
 form.new_micropost {
 
 margin-bottom: 2em;
-border: 1px groove #CC9966;
+border: 1px groove #CCFF33;
 
 }
 
@@ -461,8 +463,8 @@ margin-bottom: 0;
     overflow: hidden; }
 
 .apple_pagination {
-  background: #f1f1f1;
-  border: 1px solid #CC9966;
+  background: black;
+  border: 1px solid #FFFF33;
   text-align: center;
   padding: 1em;
   cursor: default;
@@ -485,7 +487,7 @@ margin-bottom: 0;
     text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
   .apple_pagination a {
     text-decoration: none;
-    color: black; }
+    color: yellow; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
 
