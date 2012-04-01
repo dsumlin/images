@@ -1,5 +1,5 @@
-<% title "Post" %>
-
+<section>
+<h1>Post</h1>
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
@@ -22,3 +22,4 @@
   <%= link_to "Destroy", @post, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", posts_path %>
 </p>
+</section>

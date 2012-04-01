@@ -1,5 +1,12 @@
-<% title "New Post" %>
-
-<%= render 'form' %>
+<section>
+	<table class="front round">
+		<tr>
+			<td class="main round">	
+				<h1 class="micropost round">New</h1>
+				<%= render 'form' %>
+			</td>
+		</tr>
+</table>
 
 <p><%= link_to "Back to List", posts_path %></p>
+</section>

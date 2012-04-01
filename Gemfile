@@ -5,6 +5,8 @@ gem 'nifty-generators'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'paperclip'
 gem 'blueprint-rails'
+gem 'thin'
+gem 'will_paginate'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

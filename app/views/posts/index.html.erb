@@ -1,10 +1,15 @@
-<% title "Posts" %>
-
+<section>
+	<table>
+<h1>
+	Home
+</h1>	
 <p><%= link_to "New Post", new_post_path %></p>
 
 <hr />
 
-
+<div class="apple_pagination">
+<%= will_paginate %>
+</div>
 <% for post in @posts %>
 
 	<div class="post">
@@ -20,3 +25,5 @@
 	</div>	
 
 <% end %>
+</table>
+</section>

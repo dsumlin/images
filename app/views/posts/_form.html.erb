@@ -1,14 +1,19 @@
+
+<section>
+	<table class="front round">
 <%= form_for @post, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
-  <p>
-    <%= f.label :title %><br />
+<tr>
+<td class="main round"> 
+   <%= f.label :title %><br />
     <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
+     <%= f.label :content %><br />
     <%= f.text_area :content %>
-  </p>
-
+</td>
+<div class="apple_pagination">
+<%= will_paginate @posts  %>
+</div>
+<td class="sidebar round">
 	<h4>New Files</h4>
 	
 	<% f.fields_for :assets do |asset_fields| %>
@@ -34,7 +39,10 @@
 		<% end %>
 	
 	<% end %>
-
+<div class="actions">
   <p><%= f.submit %></p>
-
+</div>
 <% end %>
+</td>
+</table>
+</section>
