@@ -2,12 +2,19 @@
 	<table>
 <h1>
 	Home
-</h1>	
-<p><%= link_to "New Post", new_post_path %></p>
-
-<hr />
-
-<div class="apple_pagination">
+</h1>
+<nav class="round">	
+<ul>
+	<li>
+	<%= link_to "Show", @post %> |
+    <%= link_to "View All", posts_path %> |
+	<%= link_to "New Post", new_post_path %>
+	</li>
+</ul>	
+</nav>
+<br />
+<br />
+<div class="apple_pagination round">
 <%= will_paginate @posts %>
 </div>
 <% for post in @posts %>
@@ -25,5 +32,20 @@
 	</div>	
 
 <% end %>
+
+
 </table>
+
 </section>
+
+<nav class="round">	
+<span style="">	
+<ul>
+	<li>
+	<%= link_to "Show", @post %> |
+    <%= link_to "View All", posts_path %> |
+	<%= link_to "New Post", new_post_path %>
+	</li>
+</ul>
+</span>	
+</nav>

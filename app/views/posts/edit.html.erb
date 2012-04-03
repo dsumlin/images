@@ -1,9 +1,16 @@
 <section>
 <h1>Edit Post</h1>
+<table>
+<nav class="round"> 
+ <ul>
+	<li>
+    <%= link_to "Show", @post %> |
+    <%= link_to "View All", posts_path %> |
+	<%= link_to "New Post", new_post_path %>
+	</li>
+</ul>
+</nav>
+</table>
 <%= render 'form' %>
 
-<p>
-  <%= link_to "Show", @post %> |
-  <%= link_to "View All", posts_path %>
-</p>
 </section>

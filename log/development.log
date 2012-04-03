@@ -1966,3 +1966,644 @@ Migrating to CreateAssets (20110206230324)
 [0m
   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("assets")
   [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:02:28 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (10.8ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (68.3ms)
+Completed 200 OK in 106ms (Views: 76.1ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at 2012-04-03 12:02:30 -0400
+
+ActionController::RoutingError (No route matches "/microposts"):
+  
+
+Rendered thin/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:02:35 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 24ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:03:22 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 43ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:04:15 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 26ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:04:16 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 26ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:04:17 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 24ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:04:18 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 24ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:04:49 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 41ms (Views: 32.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:05:35 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 25ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:06:02 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 21ms (Views: 13.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:07:40 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 24ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:09:06 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 26ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:10:23 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 42ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:10:52 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 25ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:13:58 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 23ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:14:54 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 47ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:15:34 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 26ms (Views: 16.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:16:06 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 25ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:18:01 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 41ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:19:58 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:20:29 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 44ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:20:43 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 26ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:21:14 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 29ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:21:36 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 41ms (Views: 32.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:21:50 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 23ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:22:23 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 29ms (Views: 21.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:22:35 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 27ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-03 12:22:44 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 30ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:23:25 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.6ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582525360_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582525360_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (9.1ms)
+Rendered posts/edit.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 136ms (Views: 42.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts/2" for 127.0.0.1 at 2012-04-03 12:24:01 -0400
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DOBHwpN3w3Cm0Vb+6Um+TscPYvU13KluzNsFpUQ3x5A=", "post"=>{"title"=>"Halo", "content"=>"take a look", "assets_attributes"=>{"0"=>{"asset"=>#<ActionDispatch::Http::UploadedFile:0x007fd0e3ef9078 @original_filename="10791_halo.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[assets_attributes][0][asset]\"; filename=\"10791_halo.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/RackMultipart20120403-1506-fgkbk9>>}}}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix01.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix01.jpg[0]' -resize "640x480" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix0120120403-1506-zgezvl' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix01.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix01.jpg[0]' -resize "300x300>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix0120120403-1506-biyvi5' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix01.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix01.jpg[0]' -resize "100x100>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120403-1506-1qkix0120120403-1506-1fqzj3x' 2>/dev/null
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "posts" SET "title" = 'Halo', "content" = 'take a look', "updated_at" = '2012-04-03 16:24:01.972926' WHERE ("posts"."id" = 2)[0m
+  [1m[35mAREL (10.6ms)[0m  INSERT INTO "assets" ("asset_file_name", "asset_content_type", "asset_file_size", "asset_updated_at", "post_id", "created_at", "updated_at") VALUES ('10791_halo.jpg', 'image/jpeg', 220183, '2012-04-03 16:24:01.286770', 2, '2012-04-03 16:24:01.975014', '2012-04-03 16:24:01.975014')
+[paperclip] Saving attachments.
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/9/original/10791_halo.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/9/large/10791_halo.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/9/medium/10791_halo.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/9/thumb/10791_halo.jpg
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 813ms
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2012-04-03 12:24:02 -0400
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+Rendered posts/show.html.erb within layouts/application (45.6ms)
+Completed 200 OK in 65ms (Views: 54.9ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:24:13 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:24:21 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582461520_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582461520_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (7.2ms)
+Rendered posts/edit.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 61ms (Views: 12.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:25:15 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267576510440_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267576510440_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (6.6ms)
+Rendered posts/edit.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 63ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:26:19 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582342560_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582342560_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (6.4ms)
+Rendered posts/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 60ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:26:36 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582389180_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582389180_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (8.1ms)
+Rendered posts/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 65ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:27:44 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582416340_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582416340_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (6.4ms)
+Rendered posts/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 60ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:29:21 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582514940_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582514940_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (7.5ms)
+Rendered posts/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 64ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:29:41 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582557480_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582557480_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (6.6ms)
+Rendered posts/edit.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 64ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:30:30 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582630960_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582630960_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (9.5ms)
+Rendered posts/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 48ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-03 12:31:30 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582752120_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267582752120_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (6.2ms)
+Rendered posts/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 41ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2012-04-03 12:31:38 -0400
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)
+Rendered posts/show.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 38ms (Views: 28.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:31:42 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 43ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:32:10 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:32:16 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 43ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-04-03 12:32:18 -0400
+  Processing by PostsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267583238060_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267583238060_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (3.7ms)
+Rendered posts/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 44ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:32:37 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 21ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:33:27 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 30ms (Views: 21.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:33:49 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 24ms (Views: 15.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:34:42 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 44ms (Views: 34.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:36:03 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 26ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:36:39 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 29ms (Views: 19.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:36:40 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 26ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:37:02 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 26ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:37:20 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 42ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2012-04-03 12:37:34 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 5) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 5)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267576674300_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___285052691641576769_70267576674300_2823657168847698713 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (5.4ms)
+Rendered posts/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 63ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2012-04-03 12:37:39 -0400
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 5) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 5)
+Rendered posts/show.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 31ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:37:42 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 45ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:38:36 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 24ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:38:47 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 42ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:38:58 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 25ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:39:33 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 25ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:39:35 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 43ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:39:36 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 29ms (Views: 19.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:41:43 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 42ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:42:47 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 27ms (Views: 16.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:43:14 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 25ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:43:31 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 46ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:43:48 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 23ms (Views: 15.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:44:18 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 24ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-03 12:44:33 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 0.3ms)

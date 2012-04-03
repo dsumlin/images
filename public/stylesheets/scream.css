@@ -7,7 +7,7 @@ width: 960px;
 
 body {
 
-	background: #CCFF33;
+	background: white;
 	
 }
 
@@ -32,9 +32,9 @@ text-align: center;
 margin-top: 2em;
 font-size: 120%;
 padding: 20px;
-background: black;
+background: white;
 border: 1px groove #CCFF33;
-color: #FFFF33;
+color: black;
 
 
 
@@ -43,21 +43,22 @@ color: #FFFF33;
 
 section h1 {
 
-color:	#FFFF33;
+color:	black;
 font-size: 200%;
+font-family: cursive;
 
 }
 
 a {
 
-color: #CCFF33;
+color: black;
 text-decoration: none; 
 
 }
 
 a:hover {
 
-color: 	yellow;
+color: 	blue;
 
 text-decoration: underline;
 
@@ -66,16 +67,16 @@ text-decoration: underline;
 
 a:visited {
 
-color: #FFFF33;
+color: black;
 
 }
 
 
 nav {
 
-    float: right; 
+    float: left; 
     background: black;
-    padding: 0 0.7em;
+    padding: 0 1.7em;
     white-space: nowrap;
     color: white;
 
@@ -109,7 +110,7 @@ nav ul li a {
 
 nav ul li a:visited {
 
-    color: white;
+    color: #CCFF33;
     
 
 }
@@ -117,8 +118,7 @@ nav ul li a:visited {
 nav ul li a:hover {
 
     text-decoration: underline;
-    color:#CC9966;
-    font-family: cursive;
+    color:white;
 
 
 }
@@ -194,7 +194,7 @@ td.main {
 width: 70%;
 padding: 1em;
 color:#FFFF33;
-border: 1px groove #CCFF33;
+border: 1px groove white;
 background: black;
 
 
@@ -464,7 +464,7 @@ margin-bottom: 0;
 
 .apple_pagination {
   background: black;
-  border: 1px solid #FFFF33;
+  border: 1px solid white;
   text-align: center;
   padding: 1em;
   cursor: default;
@@ -487,7 +487,7 @@ margin-bottom: 0;
     text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
   .apple_pagination a {
     text-decoration: none;
-    color: yellow; }
+    color: #CCFF33; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
 
