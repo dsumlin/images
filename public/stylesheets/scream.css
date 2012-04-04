@@ -58,7 +58,7 @@ text-decoration: none;
 
 a:hover {
 
-color: 	blue;
+color: 	black;
 
 text-decoration: underline;
 
@@ -75,10 +75,11 @@ color: black;
 nav {
 
     float: left; 
-    background: black;
+    background: white;
     padding: 0 1.7em;
     white-space: nowrap;
-    color: white;
+    color: black;
+	border: 1px groove #CCFF33;
 
 
 }
@@ -110,7 +111,7 @@ nav ul li a {
 
 nav ul li a:visited {
 
-    color: #CCFF33;
+    color: black;
     
 
 }
@@ -118,7 +119,7 @@ nav ul li a:visited {
 nav ul li a:hover {
 
     text-decoration: underline;
-    color:white;
+    color:black;
 
 
 }
