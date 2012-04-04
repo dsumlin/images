@@ -3,7 +3,8 @@ PaperclipRails3::Application.configure do
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
   config.cache_classes = true
-  #config.assets.compile = true
+  #gitconfig.assets.compile = true
+  Sass::Plugin.options[:never_update] = true
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
