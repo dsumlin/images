@@ -2877,3 +2877,62 @@ Started GET "/posts/9" for 127.0.0.1 at 2012-04-04 01:43:38 -0400
   [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 9)[0m
 Rendered posts/show.html.erb within layouts/application (28.5ms)
 Completed 200 OK in 41ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2012-04-04 01:55:45 -0400
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 9) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 9)[0m
+Rendered posts/show.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 59ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/9/edit" for 127.0.0.1 at 2012-04-04 01:55:47 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 9) LIMIT 1
+  [1m[36mAsset Load (0.3ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 9)[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___3878491375291935243_70288207272560_3770375986562838512 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___3878491375291935243_70288207272560_3770375986562838512 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (8.8ms)
+Rendered posts/edit.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 85ms (Views: 34.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts/9" for 127.0.0.1 at 2012-04-04 01:55:59 -0400
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7zNXzvaN0bSyeZ9sqpoQuJvHq6y3kONcHWlW6YK6NY4=", "post"=>{"title"=>"Space galaxy", "content"=>"space galaxy", "assets_attributes"=>{"0"=>{"id"=>"10"}, "2"=>{"asset"=>#<ActionDispatch::Http::UploadedFile:0x007fda7cf07e28 @original_filename="1440x900_zixpk_hd_wallpaper_215.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[assets_attributes][2][asset]\"; filename=\"1440x900_zixpk_hd_wallpaper_215.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/RackMultipart20120404-588-1iilxyb>>}, "6"=>{"_destroy"=>"0", "id"=>"10"}}}, "commit"=>"Update Post", "id"=>"9"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 9) LIMIT 1
+  [1m[36mAsset Load (0.3ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 9) AND ("assets"."id" IN (10, 10))[0m
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u.jpg[0]' -resize "640x480" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u20120404-588-cr56lr' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u.jpg[0]' -resize "300x300>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u20120404-588-bc1h0l' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u.jpg[0]' -resize "100x100>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-10j0t8u20120404-588-e3rr70' 2>/dev/null
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "assets" ("asset_file_name", "asset_content_type", "asset_file_size", "asset_updated_at", "post_id", "created_at", "updated_at") VALUES ('1440x900_zixpk_hd_wallpaper_215.jpg', 'image/jpeg', 356230, '2012-04-04 05:55:59.446860', 9, '2012-04-04 05:55:59.941193', '2012-04-04 05:55:59.941193')
+[paperclip] Saving attachments.
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/11/original/1440x900_zixpk_hd_wallpaper_215.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/11/large/1440x900_zixpk_hd_wallpaper_215.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/11/medium/1440x900_zixpk_hd_wallpaper_215.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/11/thumb/1440x900_zixpk_hd_wallpaper_215.jpg
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 590ms
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2012-04-04 01:55:59 -0400
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 9) LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE ("assets".post_id = 9)
+Rendered posts/show.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 59ms (Views: 48.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-04 01:56:04 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 25ms (Views: 14.8ms | ActiveRecord: 0.3ms)
