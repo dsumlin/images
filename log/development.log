@@ -2813,3 +2813,67 @@ Migrating to CreateAssets (20110206230324)
 [0m
   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("assets")
   [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-04-04 01:43:10 -0400
+  Processing by PostsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___3878491375291935243_70288208448220_3770375986562838512 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___3878491375291935243_70288208448220_3770375986562838512 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (3.8ms)
+Rendered posts/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 36ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2012-04-04 01:43:26 -0400
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7zNXzvaN0bSyeZ9sqpoQuJvHq6y3kONcHWlW6YK6NY4=", "post"=>{"title"=>"Space galaxy", "content"=>"space galaxy", "assets_attributes"=>{"0"=>{"asset"=>#<ActionDispatch::Http::UploadedFile:0x007fda7cf7da60 @original_filename="1283932356_galaxy_ngc_pic23941.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[assets_attributes][0][asset]\"; filename=\"1283932356_galaxy_ngc_pic23941.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/RackMultipart20120404-588-1xjq3y1>>}}}, "commit"=>"Create Post"}
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz.jpg[0]' -resize "640x480" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz20120404-588-1vy0u4s' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz.jpg[0]' -resize "300x300>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz20120404-588-q0f2ct' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz.jpg[0]' -resize "100x100>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120404-588-1rkuzlz20120404-588-f5620q' 2>/dev/null
+  [1m[35mAREL (21.0ms)[0m  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ('Space galaxy', 'space galaxy', '2012-04-04 05:43:27.408421', '2012-04-04 05:43:27.408421')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "assets" ("asset_file_name", "asset_content_type", "asset_file_size", "asset_updated_at", "post_id", "created_at", "updated_at") VALUES ('1283932356_galaxy_ngc_pic23941.jpg', 'image/jpeg', 537811, '2012-04-04 05:43:26.494614', 9, '2012-04-04 05:43:27.435698', '2012-04-04 05:43:27.435698')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/10/original/1283932356_galaxy_ngc_pic23941.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/10/large/1283932356_galaxy_ngc_pic23941.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/10/medium/1283932356_galaxy_ngc_pic23941.jpg
+[paperclip] saving /Volumes/dsumlin/rails_projects/images/public/system/assets/10/thumb/1283932356_galaxy_ngc_pic23941.jpg
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 1060ms
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2012-04-04 01:43:27 -0400
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 9) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 9)[0m
+Rendered posts/show.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 56ms (Views: 46.7ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-04-04 01:43:30 -0400
+  Processing by PostsController#index as HTML
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0[0m
+Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 25ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2012-04-04 01:43:34 -0400
+  Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" LIMIT 3 OFFSET 6[0m
+Rendered posts/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 29ms (Views: 19.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2012-04-04 01:43:38 -0400
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 9) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 9)[0m
+Rendered posts/show.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 41ms (Views: 30.9ms | ActiveRecord: 0.4ms)
