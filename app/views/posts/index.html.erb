@@ -20,18 +20,17 @@
 <%= will_paginate @posts %>
 </div>
 <% for post in @posts %>
-
-	<div class="post">
+	<div class="main">
+	
+	<h1>	<%= link_to post.title, post%> </h1>
 		
-		<h2><%= link_to post.title, post%></h2>
-		
+		</div>
 		<p class="content">			
 			<%= post.content.html_safe %>
 			<br /><br />
 			<%= link_to "Edit", edit_post_path(post) %> | <%= link_to "Destroy", post, :confirm => 'Are you sure?', :method => :delete %>
 		</p>
 		
-	</div>	
 
 <% end %>
 
