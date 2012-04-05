@@ -3436,3 +3436,199 @@ Started GET "/" for 127.0.0.1 at 2012-04-05 10:48:32 -0400
   [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
 Rendered posts/index.html.erb within layouts/application (13.1ms)
 Completed 200 OK in 46ms (Views: 17.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-05 11:15:41 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 32ms (Views: 19.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-05 11:15:43 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 26ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-05 11:15:44 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 25ms (Views: 14.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-05 11:15:47 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.7ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___4537334333284043786_70122426460860_2591028424444463992 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___4537334333284043786_70122426460860_2591028424444463992 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (11.2ms)
+Rendered posts/edit.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 128ms (Views: 37.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts/2" for 127.0.0.1 at 2012-04-05 11:15:55 -0400
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ShpEmo/03UCxCTl1TPYuC8muBSeS8iZOhgr2SMpV1Gc=", "post"=>{"title"=>"Halo", "content"=>"take a look", "assets_attributes"=>{"0"=>{"id"=>"9"}, "1"=>{"asset"=>#<ActionDispatch::Http::UploadedFile:0x007f8d4c60e0d8 @original_filename="1440x900_zixpk_hd_wallpaper_215.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[assets_attributes][1][asset]\"; filename=\"1440x900_zixpk_hd_wallpaper_215.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/RackMultipart20120405-239-5jn8wi>>}, "6"=>{"_destroy"=>"0", "id"=>"9"}}}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.3ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2) AND ("assets"."id" IN (9, 9))[0m
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh9.jpg[0]' -resize "640x480" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh920120405-239-1f3g049' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh9.jpg[0]' -resize "300x300>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh920120405-239-gok040' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh9.jpg[0]' -resize "100x100>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-e2fgh920120405-239-1waiuk4' 2>/dev/null
+Completed   in 633ms
+
+LoadError (cannot load such file -- aws/s3 (You may need to install the aws-s3 gem)):
+  app/controllers/posts_controller.rb:32:in `update'
+
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.8ms)
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started POST "/posts/2" for 127.0.0.1 at 2012-04-05 11:17:40 -0400
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ShpEmo/03UCxCTl1TPYuC8muBSeS8iZOhgr2SMpV1Gc=", "post"=>{"title"=>"Halo", "content"=>"take a look", "assets_attributes"=>{"0"=>{"id"=>"9"}, "1"=>{"asset"=>#<ActionDispatch::Http::UploadedFile:0x007f8d4d2ec3b8 @original_filename="1440x900_zixpk_hd_wallpaper_215.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[assets_attributes][1][asset]\"; filename=\"1440x900_zixpk_hd_wallpaper_215.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/RackMultipart20120405-239-fb0uko>>}, "6"=>{"_destroy"=>"0", "id"=>"9"}}}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2) AND ("assets"."id" IN (9, 9))[0m
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu69.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu69.jpg[0]' -resize "640x480" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu6920120405-239-zosbop' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu69.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu69.jpg[0]' -resize "300x300>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu6920120405-239-xigsgs' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu69.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu69.jpg[0]' -resize "100x100>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-239-14bwu6920120405-239-15gd049' 2>/dev/null
+Completed   in 503ms
+
+LoadError (cannot load such file -- aws/s3 (You may need to install the aws-s3 gem)):
+  app/controllers/posts_controller.rb:32:in `update'
+
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-05 11:17:44 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___4537334333284043786_70122431083340_2591028424444463992 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___4537334333284043786_70122431083340_2591028424444463992 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (7.1ms)
+Rendered posts/edit.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 74ms (Views: 13.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-05 11:17:45 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___4537334333284043786_70122431144840_2591028424444463992 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___4537334333284043786_70122431144840_2591028424444463992 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (6.3ms)
+Rendered posts/edit.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 69ms (Views: 12.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts/2" for 127.0.0.1 at 2012-04-05 11:17:48 -0400
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ShpEmo/03UCxCTl1TPYuC8muBSeS8iZOhgr2SMpV1Gc=", "post"=>{"title"=>"Halo", "content"=>"take a look", "assets_attributes"=>{"0"=>{"id"=>"9"}, "6"=>{"_destroy"=>"0", "id"=>"9"}}}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2) AND ("assets"."id" IN (9, 9))[0m
+Completed   in 59ms
+
+LoadError (cannot load such file -- aws/s3 (You may need to install the aws-s3 gem)):
+  app/controllers/posts_controller.rb:32:in `update'
+
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered cedar/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (16.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20110205203002)
+Migrating to CreateAssets (20110206230324)
+  [1m[35mSQL (0.3ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("assets")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-05 11:20:25 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 44ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-05 11:20:26 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 27ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2012-04-05 11:20:30 -0400
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2)[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___3360332348987678446_70134615871000__2627036998097896269 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb___3360332348987678446_70134615871000__2627036998097896269 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (6.5ms)
+Rendered posts/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 70ms (Views: 12.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts/2" for 127.0.0.1 at 2012-04-05 11:20:40 -0400
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ShpEmo/03UCxCTl1TPYuC8muBSeS8iZOhgr2SMpV1Gc=", "post"=>{"title"=>"Halo", "content"=>"take a look", "assets_attributes"=>{"0"=>{"id"=>"9"}, "1"=>{"asset"=>#<ActionDispatch::Http::UploadedFile:0x007f92fba60190 @original_filename="1440x900_zixpk_hd_wallpaper_215.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[assets_attributes][1][asset]\"; filename=\"1440x900_zixpk_hd_wallpaper_215.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/RackMultipart20120405-1904-kpx7zv>>}, "6"=>{"_destroy"=>"0", "id"=>"9"}}}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+  [1m[36mAsset Load (0.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE ("assets".post_id = 2) AND ("assets"."id" IN (9, 9))[0m
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy.jpg[0]' -resize "640x480" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy20120405-1904-1lot90w' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy.jpg[0]' -resize "300x300>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy20120405-1904-udws1s' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy.jpg[0]' -resize "100x100>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120405-1904-39gszy20120405-1904-30l7w5' 2>/dev/null
+Completed   in 1314ms
+
+AWS::S3::MissingAccessKey (You did not provide both required access keys. Please provide the access_key_id and the secret_access_key.):
+  app/controllers/posts_controller.rb:32:in `update'
+
+Rendered asw-s3/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered asw-s3/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered asw-s3/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
