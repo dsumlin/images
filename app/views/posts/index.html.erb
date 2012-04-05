@@ -19,7 +19,9 @@
 <div class="apple_pagination round">
 <%= will_paginate @posts %>
 </div>
+
 <% for post in @posts %>
+
 	<div class="main">
 	
 	<h1>	<%= link_to post.title, post%> </h1>
