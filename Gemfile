@@ -10,7 +10,7 @@ gem 'will_paginate'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'pg'
-gem 'aws-s3'
+gem 'aws-sdk'
 
 
 # Use unicorn as the web server
