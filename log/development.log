@@ -3818,3 +3818,47 @@ Migrating to AddAttachmentPhotoToPost (20120407012704)
   [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("assets")[0m
   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("posts")
   [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-06 21:40:02 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 69ms (Views: 58.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-06 21:48:52 -0400
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts" LIMIT 3 OFFSET 0
+Rendered posts/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 49ms (Views: 37.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2012-04-06 21:48:54 -0400
+  Processing by PostsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb__357544385143349735_70277783143580__827829602651639609 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:17)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from block in _app_views_posts__form_html_erb__357544385143349735_70277783143580__827829602651639609 at /Volumes/dsumlin/rails_projects/images/app/views/posts/_form.html.erb:30)
+Rendered posts/_form.html.erb (4.6ms)
+Rendered posts/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 45ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2012-04-06 21:49:05 -0400
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HoBiL+kbaUgiiXQ8G4qr0jAOB0glX2J5nmAt1k4omRs=", "post"=>{"title"=>"", "content"=>"", "assets_attributes"=>{"0"=>{"asset"=>#<ActionDispatch::Http::UploadedFile:0x007fd5a38ff450 @original_filename="IMG_0656.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[assets_attributes][0][asset]\"; filename=\"IMG_0656.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/RackMultipart20120406-3378-3vyphq>>}}}, "commit"=>"Create Post"}
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc9.jpg[0]' -resize "640x480" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc920120406-3378-k4xft1' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc9.jpg[0]' -resize "300x300>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc920120406-3378-1g2ta86' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc9.jpg[0]' -resize "100x100>" '/var/folders/tt/_pyrwdsx0rb0jt9w9w745bgw0000gn/T/stream20120406-3378-1q3cbc920120406-3378-128rctm' 2>/dev/null
+Completed   in 489ms
+
+AWS::S3::MissingAccessKey (You did not provide both required access keys. Please provide the access_key_id and the secret_access_key.):
+  app/controllers/posts_controller.rb:17:in `create'
+
+Rendered thin/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered thin/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.4ms)
+Rendered thin/ruby/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
